@@ -21,8 +21,7 @@ site =
 
 pingHandler :: Snap ()
 pingHandler =  do 
-    writeBS (encode [1..100])
-    --writeJSON [1..10]
+    writeBS "PONG"
 
 echoHandler :: Snap ()
 echoHandler = do
